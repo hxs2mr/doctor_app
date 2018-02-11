@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+    </android.support.v7.widget.Toolbar>
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/forget_ok_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_gravity="left|center"
+        android:text="{fa-chevron-left}"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="49dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#525F66"
+        android:textSize="25sp"
+        android:text="设置新密码"
+        />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#37BBFB"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp"
+            android:text="需要6至12位新密码"
+            />
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_marginTop="47dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/forget_ok_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#E9F0F5"
+            android:gravity="left|center"
+            android:hint="设置新密码"
+            android:inputType="textPassword"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:textColorHint="#B1B9BD"
+            android:textSize="16sp"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/forget_ok_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="2dp"
+            android:src="@mipmap/login_password_look"
+            android:visibility="invisible" />
+        </android.support.v7.widget.ContentFrameLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_forget_ok"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/loginbutton_back_shape"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="完成"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9F0F5"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/data_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/edit_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="个人资料"
+                android:typeface="sans"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/data_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="14dp"
+                android:textColor="#525F66"
+                android:textSize="18sp"
+                android:text="编辑"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/data_linear1"
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="头像"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/data_headimage"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/deadpool"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="姓名"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/data_name"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="50dp"
+            android:text="你大爷"
+            android:textColor="#525F66"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F1F5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/data_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="性别"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/data_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="50dp"
+            android:text="男"
+            android:textColor="#525F66"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F1F5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/data_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="生日"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/data_birthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="50dp"
+            android:text="2017-05-10"
+            android:textColor="#525F66"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/data_linear4"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="部门"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/data_bumen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="50dp"
+            android:text="门诊部"
+            android:textColor="#525F66"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F1F5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/data_linear5"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="职务"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/data_zhiwu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="50dp"
+            android:text="打杂的"
+            android:textColor="#525F66"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F1F5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:textColor="#B1B9BD"
+            android:textSize="16sp"
+            android:text="简介"
+            android:layout_marginLeft="15dp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/data_jianjie_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:background="@null"
+            android:text="贵州医科大学医院业务院长，博士生导师，我省资深内科专家，首都医科大学宣武医院特约顾问，中国、美国、德国三国持照医师，多年从事三甲医院的管理工作，被聘为多家医学杂志常务编委，享受国务院特殊津贴。"
+            android:padding="16dp"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

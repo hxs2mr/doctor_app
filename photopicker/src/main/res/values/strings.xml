@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="__picker_title">相册</string>
+  <string name="__picker_delete">删除</string>
+  <string name="__picker_done">完成</string>
+  <string name="__picker_done_with_count">选择(%1$d/%2$d)</string>
+  <string name="__picker_image_index">%1$d/%2$d</string>
+  <string name="__picker_undo">撤销</string>
+  <string name="__picker_deleted_a_photo">移除一张图片</string>
+  <string name="__picker_confirm_to_delete">确定要去除?</string>
+  <string name="__picker_yes">确定</string>
+  <string name="__picker_cancel">返回</string>
+  <string name="__picker_all_image">所有图片</string>
+  <string name="__picker_image_count">%1$d</string>
+  <string name="__picker_over_max_count_tips">最多只能选择 %1$d 张图片</string>
+</resources>

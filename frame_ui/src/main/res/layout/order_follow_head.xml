@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/toolbar_follow_linear"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="#37BBFB"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/order_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="56sp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:text="01"
+            />
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="33dp"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/order_xin"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:text="星期五"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/order_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:text="12/2017"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/follow_b1"
+            android:layout_gravity="bottom"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

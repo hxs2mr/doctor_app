@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/bussess_head_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:background="#37BBFB"
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/buniss_back_linear1"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="{fa-chevron-left}"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bissniss_personal_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#F0F5F7"
+                android:textSize="12sp"
+                android:text="个人签约"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bissniss_team_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="198"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#F0F5F7"
+                android:textSize="12sp"
+                android:text="团队签约"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/busniss_follow_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56%"
+                android:layout_gravity="center"
+                android:maxLength="5"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#F0F5F7"
+                android:textSize="12sp"
+                android:text="随访率"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/busniss_share1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/icon_share"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+        <View
+            android:id="@+id/v_collapse_mask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent" />
+    </FrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>

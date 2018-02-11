@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/personal_ourdata_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="65dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_headimage"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/deadpool" />
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:text="何某某"
+                android:gravity="center|left"
+                android:textColor="#425A7B"
+                android:textSize="20sp" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/person_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:gravity="center|left"
+        android:text="观山湖区碧海社区医院"
+        android:textColor="#8BA5B3"
+        android:textSize="16sp" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E9F1F5"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/person_qr_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="32dp"
+            android:background="@mipmap/icon_my_qrcode"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="我的二维码"
+            android:textColor="#525F66"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/personal_device_bd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/tv_all_account_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+             android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}"
+            android:textColor="#C1CFD6" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/person_team_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@mipmap/icon_myteam"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="我的团队"
+                    android:textColor="#525F66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+                    android:gravity="center"
+                    android:text="{fa-chevron-right}"
+                    android:textColor="#C1CFD6" />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E9F1F5"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                />
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/person_option_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@mipmap/icon_suggest"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="意见反馈"
+                    android:textColor="#525F66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+                    android:gravity="center"
+                    android:text="{fa-chevron-right}"
+                    android:textColor="#C1CFD6" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/person_setting_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@mipmap/icon_set"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="#525F66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+                    android:gravity="center"
+                    android:text="{fa-chevron-right}"
+                    android:textColor="#C1CFD6" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E9F1F5"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

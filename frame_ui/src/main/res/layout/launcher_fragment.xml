@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/luncher_start_linear"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/luncher_backimage"
+            android:layout_width="88dp"
+            android:layout_gravity="center"
+            android:layout_height="88dp"
+            android:background="@mipmap/logo1"
+            />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/fnlo3"
+                android:layout_gravity="center"
+                />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#8EA3AD"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="健康守护天使"
+                    />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/luncher_startbutton"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80dp"
+            android:text="立即体验"
+            android:textColor="#38E6FF"
+            android:textSize="18sp"
+            android:background="@null"
+            android:visibility="gone"
+            android:gravity="center"
+            />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/luncher_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="bottom|center"
+            >
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <microtech.hxswork.com.frame_ui.launcher.CircleProgressbar
+            android:id="@+id/luncher_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:text="跳过"
+            android:textColor="#d1dde6"
+            android:textSize="12sp"
+            />
+    </android.support.v7.widget.ContentFrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>

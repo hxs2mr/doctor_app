@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/patient_toolbar"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="70dp"
+
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/patient_follow_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/patient_next_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="随访记录"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1EDF2"
+        />
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/no_suifan_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="120dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/no_suifan"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="您还没有创建任务"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/start_follow_tv"
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="创建任务"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:background="@drawable/loginbutton_back_shape"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/patient_follow_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

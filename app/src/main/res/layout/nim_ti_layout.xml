@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#8c000000"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/infomationitem_back"
+        >
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:background="@mipmap/nim"
+                />
+
+        </android.support.v7.widget.ContentFrameLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/update_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:textColor="#37BBFB"
+            android:layout_marginTop="10dp"
+            android:text="账号异常"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/update_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#A8BED3"
+            android:paddingBottom="20dp"
+            android:text="你的账号在另外一台手机上登录。\n如非本人操作，则密码可能泄露,\n建议在登录页通过手机修改密码"
+            />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/nim_tuichu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="退出"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:textColor="#8ccccc"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/nim_deng"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="重新登录"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#37BBFB"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#E9F0F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/next_pop_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/next_pop_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="完善信息"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/next_pop_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="14dp"
+                android:textColor="#5D737D"
+                android:textSize="18sp"
+                android:text="保存"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/bin_linear"
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="病种"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/result_bin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:hint="请选择患者病种"
+            android:layout_gravity="center"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/phone_linear"
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="手机号"
+            />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/result_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:hint="输入患者手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:background="@null"
+            android:paddingLeft="25dp"
+            android:textColorHint="#B1B9BD"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        android:layout_marginLeft="15dp"
+
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/fuwu_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="服务截止"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/result_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:backgroundTint="#E9F0F5"
+            android:gravity="left|center"
+            android:hint="请选择截止日期"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColorHint="#B1B9BD"
+            android:textSize="16sp"
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/baidunext_qian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:text="签约资料"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/baidunext_recycle"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

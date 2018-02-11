@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="microtech.hxswork.com.frame_ui.main.Patient.TransluncentBehavior"
+        android:background="#FFFFFF"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:textColor="#525F66"
+                android:textSize="20sp"
+                android:text="我的患者"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/order_right"
+                android:layout_width="64dp"
+                android:layout_height="26dp"
+                android:textColor="#637A85"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:text="新签"
+                android:textSize="14sp"
+                android:background="@mipmap/add"
+                />
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/search_shape1"
+                android:textSize="14sp"
+                android:hint="搜索编号 、患者姓名"
+                android:textColorHint="#8BA5B3"
+                android:layout_marginBottom="10dp"
+                />
+
+</LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

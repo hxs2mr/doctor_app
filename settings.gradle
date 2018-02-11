@@ -1,0 +1,1 @@
+include ':app', ':frame_core', ':frame_ui', ':photopicker', ':ocr_ui', ':uikit'

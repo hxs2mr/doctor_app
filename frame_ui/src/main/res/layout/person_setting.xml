@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E9F0F5"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/setting_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/edit_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="设置"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/edit_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="14dp"
+                android:textColor="#5D737D"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                android:text="保存"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="患者留言提醒"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <microtech.hxswork.com.frame_ui.widget.SwitchButton
+            android:id="@+id/switch_huan"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content"
+            app:sb_checked_color="#37BBFB"
+            app:sb_background="#B1B9BD"
+            app:sb_uncheckcircle_color="#ffffff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="危机指标提醒"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <microtech.hxswork.com.frame_ui.widget.SwitchButton
+            android:id="@+id/switch_wei"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content"
+            app:sb_checked_color="#37BBFB"
+            app:sb_background="#B1B9BD"
+            app:sb_uncheckcircle_color="#ffffff"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/seting_password_linear"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="#525F66"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}"
+            android:textColor="#C1CFD6" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="当前版本"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/setting_version_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:textColor="#C1CFD6"
+            android:textSize="16sp"
+            android:text="1.0.0"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="联系我们"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:textColor="#C1CFD6"
+            android:textSize="16sp"
+            android:text="400-564-8870"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/setting_exit"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:text="退出登录"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#8BA5B3"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_exit_setting"
+
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

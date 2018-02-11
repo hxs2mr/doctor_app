@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    android:background="#ffffff"
+ >
+    <FrameLayout
+        android:id="@+id/images"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:clipChildren="false">
+        <ImageView
+            android:id="@+id/welcome_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center|top"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/heading"
+                android:text="智能硬件检测健康数据"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="bottom|center_horizontal"
+                android:textSize="28sp"
+                android:textColor="#92b1dc"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/content"
+                android:text="麻烦的复诊轻松搞定
+常规体格检测不用跑医院，省时省心"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="top|center_horizontal"
+                android:textColor="#8facc8"
+                android:textSize="16sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

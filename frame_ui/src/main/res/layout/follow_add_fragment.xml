@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E9F0F5"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/follow_add_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/edit_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="添加新随访"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/follow_add_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="14dp"
+                android:textColor="#5D737D"
+                android:textSize="18sp"
+                android:text="保存"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:text="选择患者"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#525F66"
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/our_zhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="汉族"
+            android:textColor="#525F66"
+            android:src="@mipmap/arrows"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:text="随访日期"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#525F66"
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="汉族"
+            android:textColor="#525F66"
+            android:src="@mipmap/arrows"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_marginTop="0.5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:text="随访时间"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#525F66"
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="汉族"
+            android:textColor="#525F66"
+            android:src="@mipmap/arrows"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_marginTop="0.5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:text="随访方式"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_flage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#525F66"
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="汉族"
+            android:textColor="#525F66"
+            android:src="@mipmap/arrows"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_marginTop="0.5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            android:text="服务内容"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="如测血糖，测心率等"
+            android:textColor="#B1B9BD"
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="汉族"
+            android:textColor="#525F66"
+            android:src="@mipmap/arrows"
+            android:textSize="15sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

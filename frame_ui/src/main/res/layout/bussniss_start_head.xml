@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#37BBFB"
+        android:orientation="horizontal"
+        android:layout_gravity="center|top"
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/buniss_back_linear"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="{fa-chevron-left}"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/patient_next_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="业绩统计"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/busniss_share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/icon_share"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/v_expand_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    </android.support.v7.widget.ContentFrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>

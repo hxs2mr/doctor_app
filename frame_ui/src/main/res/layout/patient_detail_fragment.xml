@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F0F5"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/detail_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/edit_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="居民详情"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/detail_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="14dp"
+                android:textColor="#5D737D"
+                android:textSize="18sp"
+                android:text="编辑"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    >
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/our_linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="头像"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:layout_height="wrap_content" />
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/our_headimage"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/our_linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="姓名"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"/>
+
+
+                        <android.support.v7.widget.AppCompatEditText
+
+                            android:id="@+id/detail_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:textColorHint="#8c8FACC8"
+                            android:textColor="#525F66"
+                            android:background="@null"
+                            android:hint="请输入姓名"
+                            android:textSize="15sp" />
+
+                        <AutoCompleteTextView
+                            android:layout_width="2dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#38E6FF"
+                            android:gravity="center"
+                            android:textColor="#8FACC8" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/detail_linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="民族"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_zhu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:textColorHint="#8c8FACC8"
+                            android:gravity="center|right"
+                            android:textColor="#525F66"
+                            android:hint="请选择民族"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/detail_linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="性别"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_sex"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="男"
+                            android:textColor="#525F66"
+                            android:textColorHint="#8c8FACC8"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/detail_linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="出生"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_age"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="#525F66"
+                            android:textSize="15sp"
+                            android:textColorHint="#8c8FACC8"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:background="@null"
+                            android:hint="请选择年龄"
+                            android:text="62"
+                            android:layout_marginRight="15dp"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/our_linear6"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="病种"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_bin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:hint="请选择病种"
+                            android:textColorHint="#8c8FACC8"
+                            android:maxLines="1"
+                            android:textColor="#525F66"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="手机号"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/detail_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:maxLength="11"
+                            android:inputType="phone"
+                            android:textColorHint="#8c8FACC8"
+                            android:hint="请输入手机号"
+                            android:maxLines="1"
+                            android:textColor="#525F66"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="所属家庭"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/detail_family"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:textColor="#525F66"
+                            android:hint="请填写所属家庭"
+                            android:textColorHint="#8c8FACC8"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="身份证号"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/detail_sheng"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:maxLength="18"
+                            android:inputType="number"
+                            android:digits="0123456789xyzXYZ"
+                            android:maxLines="1"
+                            android:hint="请填写身份证号码"
+                            android:textColorHint="#8c8FACC8"
+                            android:textColor="#525F66"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#E9F0F5"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/our_diqu_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="地区"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/our_city"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="#A8BED3"
+                            android:textSize="15sp"
+                            android:background="@null"
+                            android:layout_marginRight="15dp"
+                            android:textColorHint="#8c8FACC8"
+                            android:hint="选择居住地区"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/our_linear8"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:layout_marginTop="14dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="15dp"
+                            android:text="详细地址:"
+                            />
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/detail_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#A8BED3"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:layout_marginTop="12dp"
+                            android:maxLines="1"
+                            android:background="@null"
+                            android:scaleType="fitXY"
+                            android:hint="请输入详细居住地址"
+                            android:textColorHint="#8c8FACC8"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/xinxi_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="信息来源"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_team_person"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:text="由张三创建"
+                            android:maxLines="1"
+                            android:textColor="#525F66"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/team_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#B1B9BD"
+                            android:textSize="16sp"
+                            android:text="所属团队"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/detail_team"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:text="李四的团队"
+                            android:maxLines="1"
+                            android:textColor="#525F66"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

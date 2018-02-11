@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BintPopWindowAnim" parent="@android:style/Animation.Activity">
+        <item name = "android:windowEnterAnimation">@anim/binddevice_enter</item>
+        <item name = "android:windowExitAnimation">@anim/binddevice_exit</item>
+    </style>
+    <style name="LoginPopWindowAnim" parent="@android:style/Animation.Activity">
+        <item name = "android:windowEnterAnimation">@anim/login_popwindow_enter</item>
+        <item name = "android:windowExitAnimation">@anim/login_popwindow_exit</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/text_2</item>
+        <item name="colorControlActivated">@color/text_1</item>
+    </style>
+
+</resources>

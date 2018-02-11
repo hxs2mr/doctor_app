@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/patient_item"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/patient_voice_time"
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/patient_recode_back"
+        android:text="2014/12/13"
+        android:paddingLeft="15dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#8BA5B3"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/patient_voice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textColor="#525F66"
+        android:textSize="16sp"
+        android:text="语音记录标题"
+        android:layout_marginLeft="27dp"
+        />
+<android.support.v7.widget.AppCompatImageView
+    android:id="@+id/patient_voice_image"
+    android:layout_width="237dp"
+    android:layout_height="35dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="27dp"
+    android:background="@mipmap/voice"
+    android:layout_marginBottom="24dp"
+    />
+</android.support.v7.widget.LinearLayoutCompat>

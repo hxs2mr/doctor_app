@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/send_activity_back_linear"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="{fa-chevron-left}"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/send_activity_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#525F66"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/send_activity_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textColor="#37BBFB"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/send_activity_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingTop="1dp"
+        android:background="#F0F5F7"
+        >
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/send_activity_photo_edit"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="65dp"
+            android:hint="输入图片标题... "
+            android:textColorHint="#C1CFD6"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/send_activity_photo_recycler"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#ffffff"
+            android:paddingBottom="24dp"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/send_activity_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingTop="1dp"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F5F7"
+            />
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/send_activity_text_edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:hint="请输入记录的内容..."
+        android:textColor="#525F66"
+        android:gravity="center|left"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColorHint="#C1CFD6"
+        android:theme="@style/MyEditText"
+        android:textSize="16sp"
+        />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

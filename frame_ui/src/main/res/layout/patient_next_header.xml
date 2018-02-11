@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F5F7"
+    >
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/patietn_sign_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/head_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:text="血压:"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:paddingLeft="5dp"
+                android:text="128/80mmhg"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_flage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#37BBFB"
+                android:paddingLeft="5dp"
+                android:text="正常"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/11/01 14:20"
+                android:textColor="#C1CFD6"
+                android:textSize="12sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/head_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:text="血糖:"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:paddingLeft="5dp"
+                android:text="120mol/L"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_flage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FF597D"
+                android:paddingLeft="5dp"
+                android:text="偏高"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/11/01 14:20"
+                android:textColor="#C1CFD6"
+                android:textSize="12sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/head_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:text="血氧:"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:paddingLeft="5dp"
+                android:text="120mol/L"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_flage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FCD210"
+                android:paddingLeft="5dp"
+                android:text="正常"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/head_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/11/01 14:20"
+                android:textColor="#C1CFD6"
+                android:textSize="12sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:text="心率:"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#525F66"
+                android:paddingLeft="5dp"
+                android:text="200次/分钟"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FCD210"
+                android:paddingLeft="5dp"
+                android:text="正常"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/11/01 14:20"
+                android:textColor="#C1CFD6"
+                android:textSize="12sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/head_follow_linear"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="13dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#525F66"
+            android:paddingLeft="5dp"
+            android:text="最后一次随访"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/zuihou_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017/11/01 14:20"
+            android:textColor="#C1CFD6"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="{fa-chevron-right}"
+            android:textColor="#C1CFD6" />
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/qian_item_shape"
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/heathly_next_item_linear"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|left"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/qian_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textSize="16sp"
+                        android:layout_gravity="center|bottom"
+                        android:textColor="#525F66"
+                        />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/qian_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="男"
+                        android:layout_gravity="center|bottom"
+                        android:textSize="16sp"
+                        android:textColor="#525F66"
+                        />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/qian_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24岁"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:layout_gravity="center|bottom"
+                        android:textColor="#525F66"
+                        />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center|left"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/qian_bin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="高血压 ，低血糖"
+                        android:textSize="14sp"
+                        android:layout_gravity="left"
+                        android:textColor="#8EA3AD"
+                        />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/patient"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:background="@mipmap/label"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qian_status"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="26dp"
+                    android:text="正在治疗"
+                    />
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/qian_number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="编号：12645456745"
+                android:maxLines="1"
+                android:textColor="#B1B9BD"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/qian_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="12:30"
+                android:textColor="#B1B9BD"
+                android:textSize="12sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

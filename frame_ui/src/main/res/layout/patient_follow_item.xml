@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/patinent_follow_title_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#525F66"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_marginLeft="16dp"
+            android:text="第1次随访"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#C1CFD6"
+            android:textSize="16sp"
+            android:layout_marginRight="7dp"
+            android:text="2017/12/14"
+            />
+            <ImageView
+                android:id="@+id/item_xia"
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/case_xia_on"
+                />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    
+
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/patient_follow_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F6F7"
+        android:paddingBottom="24dp"
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="症状描述："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_bin"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="血压过高"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="康复效果："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xiaoguo"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="效果一般"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="指导建议："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_zhidao"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="按时用药，多锻炼，定期测量血压血糖，保证每天足够多睡眠时间"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="随访方式："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_suif"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="电话随访"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="随访记录："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_suip"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="魏咣景"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="当次血压值："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xueya"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="128/80mmhg"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xueya_flage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="正常"
+                android:textColor="#37BBFB"
+                android:textSize="14sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#525F66"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="当次血糖值："
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_xuetan"
+            android:layout_marginLeft="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#8BA5B3"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="120mol/L"
+            />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xuetan_flage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="正常"
+                android:textColor="#37BBFB"
+                android:textSize="14sp"
+                />
+    </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="当次血氧值："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xueyan"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="120mol/L"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xueyan_flage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="偏高"
+                android:textColor="#FF597D"
+                android:textSize="14sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="当次心率值："
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xinlu"
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#8BA5B3"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="200次/分"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_xinlu_flage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="偏高"
+                android:textColor="#FF597D"
+                android:textSize="14sp"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

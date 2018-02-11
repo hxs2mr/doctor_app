@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/patient_toolbar"
+        android:paddingTop="25dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/result_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#525F66"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/patient_next_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="随访结果"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/result_tijiao"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:textColor="#37BBFB"
+                android:textSize="18sp"
+                android:text="提交"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E1EDF2"
+    />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/event_order_cirsshape"
+        android:textColor="#8BA5B3"
+        android:textSize="16sp"
+        android:text="请认真填写本次随访结果，系统将计入业绩统计"
+        />
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#8BA5B3"
+        android:text="症状描述"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/result_miaoshu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textColor="#525F66"
+        android:background="@null"
+        android:hint="请填写症状描述"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        />
+</android.support.v7.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E9F1F5"
+        />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#8BA5B3"
+            android:text="康复效果"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/result_xiaoguo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#525F66"
+            android:background="@null"
+            android:hint="请选择康复效果"
+            android:textSize="16sp"
+            android:paddingLeft="24dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E9F1F5"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/follow_add_linear4"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#8BA5B3"
+            android:textSize="16sp"
+            android:text="随访方式"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/follow_add_flage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#525F66"
+            android:gravity="left|center"
+            android:layout_marginRight="16dp"
+            android:hint="请选择随访方式"
+            android:paddingLeft="24dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E9F1F5"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#8BA5B3"
+            android:text="指导建议"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/result_zhidao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#525F66"
+            android:background="@null"
+            android:hint="请填写指导建议"
+            android:textSize="16sp"
+            android:paddingRight="16dp"
+            android:paddingLeft="24dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E9F1F5"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

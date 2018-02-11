@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+    <microtech.hxswork.com.frame_ui.main.szxing.views.MaskSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </microtech.hxswork.com.frame_ui.main.szxing.views.MaskSurfaceView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/left_top"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_top"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_bottom"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="70dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/left_bottom"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="70dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="1"
+            android:text="请将身份证放入框内并拍照"
+            android:textColor="#ffffff"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_shop_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:gravity="center">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="{fa-chevron-left}"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                tools:ignore="HardcodedText" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="扫身份证"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/reco_recognize_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/camera_shutter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bcr_camera_shutter" />
+    </LinearLayout>
+
+</RelativeLayout>

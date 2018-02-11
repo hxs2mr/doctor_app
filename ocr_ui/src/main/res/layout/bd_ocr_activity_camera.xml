@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <include
+            android:id="@+id/take_picture_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/bd_ocr_take_picture"/>
+
+    <include
+            android:id="@+id/crop_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            layout="@layout/bd_ocr_crop"/>
+
+    <include
+            android:id="@+id/confirm_result_container"
+            layout="@layout/bd_ocr_confirm_result"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            >
+            <TextView
+                android:id="@+id/no_shenfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#edf8ed"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:maxEms="1"
+                android:text="没有身份证？"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/back_linear"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:background="@android:color/transparent"
+                >
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ocr_bak"
+                    android:rotation="270"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.ContentFrameLayout>
+</RelativeLayout>

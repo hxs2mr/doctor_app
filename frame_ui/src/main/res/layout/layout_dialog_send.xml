@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/pop_layout"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="50sp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_day"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/__picker_black_40"
+                android:layout_marginTop="10dp"
+                android:text="星期五"/>
+
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/__picker_black_40"
+                android:text="05/2017"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_send_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="文字"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#8BA5B3"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_addtext"/>
+
+        <TextView
+            android:id="@+id/tv_send_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="相册"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#8BA5B3"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_addcamera"/>
+
+        <TextView
+            android:id="@+id/tv_send_speech"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="录音"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#8BA5B3"
+            android:visibility="gone"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_addspeech"/>
+
+        <TextView
+            android:id="@+id/tv_send_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#8BA5B3"
+            android:visibility="gone"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_add_camera"/>
+
+
+        <TextView
+            android:id="@+id/tv_send_follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="随访"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#8BA5B3"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_addvisit"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffff"
+        >
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/patient_next_cancel"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_reduce"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

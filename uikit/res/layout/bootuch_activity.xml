@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gridviewbg" >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/patient_toolbar"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+
+        >
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/bootuch_back_linear"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#525F66"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bootuch_next_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/result_tijiao"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:textColor="#37BBFB"
+                android:textSize="18sp"
+                android:text="提交"
+                android:visibility="invisible"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1EDF2"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/realplay_pc300_buttonlayout"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:visibility="gone"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/realplay_pc300_img_battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/battery_3" />
+
+                 <com.netease.nim.uikit.bootuch.draw.DrawPC300NIBPRect
+                    android:id="@+id/realpaly_pc300_draw_nibp_rect"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/realplay_pc300_img_battery" /> 
+                
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#525F66"
+                            android:gravity="center"
+                            android:text="@string/const_sys_text" />
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_sys_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_nibp_text_unit" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_sys"
+                            style="@style/realplay_data_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_sys" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="#525F66"
+                            android:text="@string/const_dia_text" />
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_dia_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_nibp_text_unit" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_dia"
+                            style="@style/realplay_data_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_dia" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E9F1F5"
+                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#525F66"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="@string/const_spo2_text" />
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_spo2_unit_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_spo"
+                            style="@style/realplay_data_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_spo2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#525F66"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="@string/const_pr_text" />
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_pr_unit_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_pr"
+                            style="@style/realplay_data_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_pr" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E9F1F5"
+                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#525F66"
+                            android:textSize="16sp"
+                            android:text="@string/const_temp_text" />
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_temp_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_temp_unit_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_temp"
+                            style="@style/realplay_data_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_temp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#525F66"
+                            android:textSize="16sp"
+                            android:text="@string/const_glu_text" />
+
+                        <TextView
+                            android:id="@+id/tv_glu_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/const_glu_unit_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_glu"
+                            style="@style/realplay_data_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_glu" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--PC300 baijie device of CHOL UA ,PC200 is unsupported-->
+            <LinearLayout
+                android:id="@+id/baijie1_device"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+             
+             <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    
+ 		    		<TextView
+ 		    		    	android:id="@+id/realplay_pc300_tv_ua_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/const_ua_mgdl_text" />
+					<TextView
+                            android:id="@+id/realplay_pc300_tv_ua"
+                            style="@style/realplay_data_small"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_ua" />                       
+                 
+             </LinearLayout>
+
+
+             <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+					
+ 		    		<TextView
+ 		    		    android:id="@+id/realplay_pc300_tv_chol_unit"
+                            style="@style/realplay_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/const_chol_mgdl_text" />
+					<TextView
+                            android:id="@+id/realplay_pc300_tv_chol"
+                            style="@style/realplay_data_small"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/const_data_nodata"
+                            android:textColor="@color/data_chol" /> 
+                 
+ 		    </LinearLayout>
+		        </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/realplay_pc300_tv_mode"
+                    style="@style/realplay_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="#525F66"
+                    android:paddingLeft="10dp"
+                    android:text="实时测试值" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="9" >
+
+                    <com.netease.nim.uikit.bootuch.draw.BackGround
+                        android:id="@+id/realpaly_pc300_view_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.netease.nim.uikit.bootuch.draw.DrawThreadPC300
+                        android:id="@+id/realpaly_pc300_view_draw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bootuch_end_shape"
+                        android:elevation="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/realplay_pc300_tv_msg"
+                            style="@style/realplay_data_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/color_main_black" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:elevation="10dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/realplay_pc300_img_pulse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/mainheart_ok"
+                        android:visibility="invisible" />
+
+                    <com.netease.nim.uikit.bootuch.draw.DrawPC300SPO2Rect
+                        android:id="@+id/realpaly_pc300_draw_spo_rect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bootuch_end_shape"
+                        android:layout_below="@+id/realplay_pc300_img_pulse"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/realplay_pc300_buttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_blank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+                
+            <Button
+                android:id="@+id/realplay_pc300_bt_update"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/item_bg_yellow"
+                android:text="@string/measure_update"
+                android:textColor="@color/color_main_white"
+
+                 android:visibility="gone"
+                android:textSize="10sp" />                
+
+            <Button
+                android:id="@+id/realplay_pc300_bt_nibp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/item_bg_blue"
+                android:text="@string/measure_nibp"
+                android:textColor="@color/color_main_white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_blank1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/realplay_pc300_bt_ecg"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:paddingLeft="10dp"
+                android:background="@drawable/item_bg_red"
+                android:paddingRight="10dp"
+                android:text="@string/measure_ecg"
+                android:textColor="@color/color_main_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </FrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>

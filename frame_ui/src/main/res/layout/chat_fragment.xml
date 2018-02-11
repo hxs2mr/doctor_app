@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_tb1"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:background="#37BBFB"
+        >
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/home_doctor"
+                android:layout_gravity="bottom|center"
+                />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/logo"
+                />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center|right"
+                android:background="@mipmap/slogan"
+                />
+        </android.support.v7.widget.ContentFrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f4f8fc"
+        android:scrollbars="none"
+        >
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/home_qian_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center|right"
+                >
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="62dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="62dp"
+                    android:background="@mipmap/icon_signed"
+                    />
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qian_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#637A85"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8EA3AD"
+                        android:textSize="15sp"
+                        android:text="签约管理"
+                        />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:background="@drawable/bg"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/home_follow_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center|right"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="62dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="62dp"
+                    android:background="@mipmap/icon_task"
+                    />
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/suifan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#637A85"
+                        android:textSize="30sp"
+                        android:layout_gravity="center"
+                        />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8EA3AD"
+                        android:textSize="15sp"
+                        android:text="随访任务"
+                        />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:background="@drawable/bg"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/home_event_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|right"
+                    >
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="62dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="62dp"
+                        android:background="@mipmap/icon_remind"
+                        />
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <android.support.v7.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            >
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="invisible"
+                                android:background="@mipmap/b_point"
+                                />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/event_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#637A85"
+                            android:textSize="30sp"
+                            android:maxLines="2"
+                            android:text="0"
+                            />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/event_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="invisible"
+                                android:background="@mipmap/b_point"
+                                />
+                        </android.support.v7.widget.LinearLayoutCompat>
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#8EA3AD"
+                            android:textSize="15sp"
+                            android:text="事件提醒"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:background="@drawable/bg"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/home_business_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|right"
+                    >
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="62dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="62dp"
+                        android:background="@mipmap/icon_statistics"
+                        />
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/bussniss_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#637A85"
+                            android:textSize="30sp"
+                            android:text="1"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#8EA3AD"
+                            android:textSize="15sp"
+                            android:text="业绩统计"
+                            />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

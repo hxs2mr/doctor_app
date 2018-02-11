@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/patient_item"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/patietn_text_time"
+    android:layout_marginTop="14dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/patient_recode_back"
+    android:text="2014/12/13"
+    android:paddingLeft="15dp"
+    android:paddingRight="12dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:textColor="#8BA5B3"
+    android:textSize="14sp"
+    android:layout_gravity="center"
+    />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/patietn_text_data"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:textColor="#B1B9BD"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:text="体格检查体格检查必须认真、仔细，按部位和系统顺序进行，既有所侧重，又不遗漏阳性体征。对病人态度要和蔼、严肃，集中思想，手法轻柔，注意病人反应，冷天要注意保暖。对危急病人可先重点检查，及时进行抢救处理，待病情稳定后再做详细检查 ；不要过多搬动，以免加重病情"
+        android:layout_marginBottom="24dp"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

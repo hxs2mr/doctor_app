@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<microtech.hxswork.com.frame_ui.widget.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="79.5dp">
+
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center|left"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/infomation_width_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center|left"
+            >
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_height="79dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/infomation_recycleview_headimage"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                   />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/infomation_recycleview_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:scaleType="fitXY"
+                        android:text="何医生"
+                        android:textColor="#798DAA"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/infomation_recycleview_item_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_gravity="center|left"
+                        android:scaleType="fitXY"
+                        android:text="小伙子 最近身体是不是跨了？"
+                        android:textColor="#A8BED3"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/infomation_right"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/infomation_right"
+                    android:layout_marginRight="13dp"
+                    android:visibility="gone"
+                    />
+                <LinearLayout
+                    android:id="@+id/infomation_xiaoxi_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/infomation_recycleview_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:18"
+                        android:textColor="#D1DDE6"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/infomation_recycleview_item_nums"
+                        android:layout_width="24dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@mipmap/infomation_nums"
+                        android:elevation="4dp"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="1dp"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        tools:text="11" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:background="#FD60A2"
+            >
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_height="match_parent"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="删 除"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:drawableTop="@mipmap/delete_icon"
+                android:textColor="#ffffff"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</microtech.hxswork.com.frame_ui.widget.SlidingButtonView>

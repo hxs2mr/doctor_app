@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ecg_measureres">
+        <item>No irregularity found.</item>
+        <item>Suspected a little fast beat.</item>
+        <item>Suspected fast beat.</item>
+        <item>Suspected short run of fast beat.</item>
+        <item>Suspected a little slow beat.</item>
+        <item>Suspected slow beat.</item>
+        <item>Suspected occasional short beat interval.</item>
+        <item>Suspected irregular beat interval.</item>
+        <item>Suspected fast beat with short beat interval.</item>
+        <item>Suspected slow beat with short beat interval.</item>
+        <item>Suspected slow beat with irregular beat interval.</item>
+        <item>Waveform baseline wander.Measure again.</item>
+        <item>Suspected fast beat with baseline wander.</item>
+        <item>Suspected slow beat with baseline wander.</item>
+        <item>Suspected occasional short beat interval with baseline wander.</item>
+        <item>Suspected irregular beat interval with baseline wander.</item>
+        <item>Poor signal, Measure again.</item>
+        <item>The results of the analysis error</item>
+    </string-array>
+    <string-array name="bp_err_old">
+        <item>No valid pulse measurement</item>
+        <item>Cuff error</item>
+        <item>Invalid result</item>
+        <item>Overpressure protection</item>
+        <item>Excessive interference</item>
+        <item>Low battery, measurement terminated.</item>
+    </string-array>
+    <string-array name="bp_err_new">
+        <item>Cuff error</item>
+        <item>Overpressure protection</item>
+        <item>No valid pulse measurement</item>
+        <item>Excessive interference</item>
+        <item>Invalid result</item>
+        <item>Air leakage</item>
+        <item>Self-test fail</item>
+        <item>Pneumatic system error</item>
+        <item>Signal saturation</item>
+        <item>Air leakage</item>
+        <item>Hadware fault</item>
+        <item>Meaurement timeout</item>
+        <item>Low battery, measurement terminated.</item>
+    </string-array>
+    <string-array name="bp_rank">
+        <item>O</item>
+        <item>N</item>
+        <item>H</item>
+        <item>G1</item>
+        <item>G2</item>
+        <item>G3</item>
+    </string-array>
+
+</resources>

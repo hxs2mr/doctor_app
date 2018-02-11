@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">frame_ui</string>
+    <string name="camera_open_error">打开相机失败</string>
+    <string name="import_img">导入图片</string>
+    <string name="take_photo">拍照</string>
+    <string name="loading">正在加载请稍后!!!</string>
+    <string name="photo_too_lage">图片太大！</string>
+    <string name="no_sdcard">无sdcard！</string>
+    <string name="takephoto_fail">拍照失败</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<microtech.hxswork.com.frame_ui.widget.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center|left"
+    android:background="#ffffff"
+    >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center|left"
+        >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/infomation_width_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center|left"
+        >
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/event_item_image"
+        android:layout_width="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_height="48dp" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|left"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/event_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="17sp"
+            android:text="患者申请"
+            />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/event_item_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="#C1CFD6"
+                android:textSize="12sp"
+                android:paddingRight="16sp"
+                android:gravity="center|right"
+                android:text="06:30"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/event_item_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#C1CFD6"
+            android:textSize="14sp"
+            android:layout_gravity="center|left"
+
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:text="张三申请与您建立随访关系"
+            />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/infomation_item_nums"
+                android:layout_width="24dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center|right"
+                android:background="@mipmap/infomation_nums"
+                android:elevation="4dp"
+                android:ems="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="1dp"
+                android:layout_marginRight="16sp"
+                android:maxLength="2"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:text="0"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/event_item_account"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/event_item_shape"
+        android:textColor="#ffffff"
+        android:text="同意"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="16dp"
+        />
+    </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:background="#FF597D"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/bisniss_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </FrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>
+</microtech.hxswork.com.frame_ui.widget.SlidingButtonView>

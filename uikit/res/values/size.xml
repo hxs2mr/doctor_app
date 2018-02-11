@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="realplay_bigtest_h">62sp</dimen>
+    <dimen name="realplay_smalltest_h">38sp</dimen>
+    
+    
+    <dimen name="realplay_bigtest_m">50sp</dimen>
+    <dimen name="realplay_smalltest_m">30sp</dimen>
+
+</resources>

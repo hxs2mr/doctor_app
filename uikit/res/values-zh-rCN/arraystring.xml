@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ecg_measureres">
+        <item>波形未见异常</item>
+        <item>波形疑似心跳稍快,请注意休息</item>
+        <item>波形疑似心跳过快,请注意休息</item>
+        <item>波形疑似阵发性心跳过快,请咨询医生</item>
+        <item>波形疑似心跳稍缓,请注意休息</item>
+        <item>波形疑似心跳过缓,请注意休息</item>
+        <item>波形疑似偶发心跳间期缩短,请咨询医生</item>
+        <item>波形疑似心跳间期不规则,请咨询医生</item>
+        <item>波形疑似心跳稍快伴有偶发心跳间期缩短,请咨询医生</item>
+        <item>波形疑似心跳稍缓伴有偶发心跳间期缩短,请咨询医生</item>
+        <item>波形疑似心跳稍缓伴有心跳间期不规则,请咨询医生</item>
+        <item>波形有漂移,请重新测量</item>
+        <item>波形疑似心跳过快伴有波形漂移,请咨询医生</item>
+        <item>波形疑似心跳过缓伴有波形漂移,请咨询医生</item>
+        <item>波形疑似偶发心跳间期缩短伴有波形漂移,请咨询医生</item>
+        <item>波形疑似心跳间期不规则伴有波形漂移,请咨询医生</item>
+        <item>信号较差请重新测量</item>
+        <item>分析结果出现错误</item>
+    </string-array>
+    <string-array name="bp_err_old">
+        <item>测量不到有效的脉搏</item>
+        <item>气袋没绑好</item>
+        <item>测量结果数值有误</item>
+        <item>进入超压保护</item>
+        <item>干预过多</item>
+        <item>电量过低，血压测量停止</item>
+    </string-array>
+    <string-array name="bp_err_new">
+        <item>气袋没绑好</item>
+        <item>气袋没绑好</item>
+        <item>进入超压保护</item>
+        <item>测量不到有效的脉搏</item>
+        <item>干预过多</item>
+        <item>测量结果数值有误</item>
+        <item>漏气</item>
+        <item>自检失败</item>
+        <item>气压错误</item>
+        <item>信号饱和</item>
+        <item>系统气路漏气</item>
+        <item>压力传感器出错</item>
+        <item>测量超时</item>
+        <item>电量过低，血压测量停止</item>
+    </string-array>
+    <string-array name="bp_rank">
+        <item>最佳</item>
+        <item>正常</item>
+        <item>临高</item>
+        <item>轻高</item>
+        <item>中高</item>
+        <item>重高</item>
+    </string-array>
+
+</resources>

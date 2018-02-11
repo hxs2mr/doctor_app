@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    android:background="#ffffff"
+>
+    <FrameLayout
+        android:id="@id/images"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:clipChildren="false">
+        <ImageView
+            android:id="@+id/welcome_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center|top"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@id/heading"
+                android:text="个性化医疗服务定制"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="bottom|center_horizontal"
+                android:textSize="28sp"
+                android:textColor="#92b1dc"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@id/content"
+                android:text="签约医生提供24小时健康照护
+家庭健康持续医疗服务有保障"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="top|center_horizontal"
+                android:textColor="#8facc8"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

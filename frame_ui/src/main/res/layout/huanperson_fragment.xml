@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/next_pop_back_linear"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/next_pop_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="{fa-chevron-left}"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/search_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/search_image"
+                android:paddingLeft="5dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#525F66"
+                android:layout_gravity="center"
+                android:imeOptions="actionSearch"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_shape"
+                android:textSize="14sp"
+                android:hint="搜索编号 、患者姓名"
+                android:textColorHint="#8BA5B3"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/search_result"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="搜索结果"
+        android:textSize="16sp"
+        android:textColor="#9EBFCF"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/search_hisroy"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="历史搜索"
+        android:textSize="16sp"
+        android:textColor="#9EBFCF"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/search_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/search_delete"
+            />
+
+</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

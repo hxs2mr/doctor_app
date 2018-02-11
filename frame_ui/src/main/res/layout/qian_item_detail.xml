@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_tb"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:background="#37BBFB"
+        android:paddingTop="25dp"
+        >
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/qian_back_linear"
+                android:layout_width="50dp"
+                android:orientation="vertical"
+                android:paddingLeft="17dp"
+                android:layout_height="40dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/qian_back"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/btn_close" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/qian_edit_linear"
+                android:layout_width="50dp"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:paddingRight="17dp"
+                android:layout_height="40dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/qian_edit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@mipmap/icon_edit" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@mipmap/bgimage_file" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="17dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qian_d_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qian_d_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qian_d_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.ContentFrameLayout>
+        
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        >
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_marginTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_natio"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_zhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:drawablePadding="30dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_entity"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_bin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:drawablePadding="30dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_phone"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:drawablePadding="30dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_identity_card"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:drawablePadding="30dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_address"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:drawablePadding="30dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center|left"
+            android:textColor="#525F66"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/icon_details"
+            />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/qian_d_recycleview"
+                android:layout_marginRight="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/qian_edit_person"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_ren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center|left"
+            android:textColor="#37BBFB"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/qian_item_deail_shape"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center|left"
+            android:textColor="#37BBFB"
+            android:text="服务截止时间:"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/qian_d_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center|right"
+            android:textColor="#B1B9BD"
+            android:text="2017/09/05 12:18"
+            />
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

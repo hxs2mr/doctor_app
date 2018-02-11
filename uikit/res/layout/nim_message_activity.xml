@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="45dp"
+
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/uikit_back_linear"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:text="{fa-chevron-left}"
+                        />
+                </android.support.v7.widget.LinearLayoutCompat>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/uikit_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#525F66"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18sp"
+                    android:typeface="serif"
+                    android:text=""
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/uikit_jieguo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textColor="#525F66"
+                    android:layout_gravity="center"
+                    android:paddingRight="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight="14dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/jieguo"
+                    android:text="测量体格"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone"
+            android:background="?attr/colorPrimary"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:subtitleTextAppearance="@style/Toolbar.SubTitleText"/>
+    </android.support.design.widget.AppBarLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    resourcePrefix "__picker_"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+ext {
+    supportLibVersion = "26.+"
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':frame_core')
+}

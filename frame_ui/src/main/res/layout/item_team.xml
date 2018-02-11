@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+<android.support.v7.widget.AppCompatImageView
+    android:id="@+id/item_team_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="11dp"
+    android:background="@mipmap/principal"
+    />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="#525F66"
+        android:textSize="16sp"
+        android:text="啊飒飒"
+        android:paddingLeft="13dp" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_team_leibie"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textColor="#C1CFD6"
+        android:textSize="14sp"
+        android:text="负责人"
+        android:layout_gravity="center"
+        android:paddingRight="11dp"
+        android:gravity="center|right"
+
+        />
+</android.support.v7.widget.LinearLayoutCompat>

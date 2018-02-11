@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/send_shape"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="测量结果"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#88cccc"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/send_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:textColor="#8c000000"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/send_t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#8c000000"
+        android:paddingBottom="10dp"
+        />
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#CDD9E0"
+    />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/send_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#88cccc"
+            android:text="重测"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#CDD9E0"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/send_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#d4237a"
+            android:text="上传"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

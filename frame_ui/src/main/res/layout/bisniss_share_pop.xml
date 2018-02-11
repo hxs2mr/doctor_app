@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FAFBFD"
+    >
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/wechat_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+<android.support.v7.widget.AppCompatImageView
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/icon_wechat"
+    />
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="微信"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:textColor="#525F66"
+    android:textSize="14sp"
+    />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/qq_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_qq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#525F66"
+            android:textSize="14sp"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/wechat_com_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_wechat_moments"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友圈"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#525F66"
+            android:textSize="14sp"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.LinearLayoutCompat>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E9F1F5"
+    />
+
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/cancle"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:text="取消"
+    android:textColor="#8BA5B3"
+    android:textSize="18sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<microtech.hxswork.com.frame_ui.widget.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="105dp">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|left"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/infomation_width_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center|left"
+            >
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:orientation="horizontal">
+
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/bisniss_shen_time"
+              android:layout_width="42dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="12dp"
+              android:gravity="center"
+              android:text="20天\n剩余"
+              android:textColor="#B1B9BD"
+              android:textSize="14sp"
+              />
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/follow_staties"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/loginbutton_back_shape"
+                            android:layout_gravity="center"
+                            />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/bisniss_sui_flage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="电话随访"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#525F66"
+                        android:textSize="16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/bisniss_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:maxLength="4"
+                            android:text="梁桉栗"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#525F66"
+                            android:textSize="16sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/bisniss_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="2017/03/23下午"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#525F66"
+                            android:textSize="13sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/bisniss_phone_linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@mipmap/btn_phone"
+                        />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/bisniss_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:maxLines="1"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="fitXY"
+                        android:text="18306488171"
+                        android:textColor="#8EA3AD"
+                        android:textSize="14sp" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:layout_gravity="bottom"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E9F1F5"
+                        android:layout_gravity="bottom"
+                        />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:background="#FF597D"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bisniss_delete"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="删 除"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+</microtech.hxswork.com.frame_ui.widget.SlidingButtonView>

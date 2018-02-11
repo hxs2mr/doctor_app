@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 定义常量字符 -->
+    <string name="const_appname">蓝牙demno</string>
+    <string name="const_sys_text">收缩压</string>
+    <string name="const_sys_textandunit">收缩压\n(mmHg)</string>
+    <string name="const_dia_text">舒张压</string>
+    <string name="const_dia_textandunit">舒张压\n(mmHg)</string>
+    <string name="const_spo2_text">血氧</string>
+    <string name="const_spo2_textandunit">血氧\n(%)</string>
+    <string name="const_pr_text">脉率</string>
+    <string name="const_pr_textandunit">脉率\n(bmp)</string>
+    <string name="const_temp_text">体温</string>
+    <string name="const_temp_textandunit">体温\n(℃)</string>
+    <string name="const_glu_text">血糖</string>
+    <string name="const_glu_textandunit">血糖\n(mmol/L)</string>
+    <string name="const_pi_text">PI</string>
+    <string name="const_pi_textandunit">PI\n(%)</string>
+    <string name="const_nibp_text_unit">(mmHg)</string>
+    <string name="const_nibp_text_unit_kpa">(kPa)</string>
+    <string name="const_spo2_unit_text">(%)</string>
+    <string name="const_spo2_unit_text_sp">%</string>
+    <string name="const_pr_unit_text">(bmp)</string>
+    <string name="const_temp_unit_text">℃</string>
+    <string name="const_temp_unit_text_sp">摄氏度</string>
+    <string name="const_temp_unit_text_f">℉</string>
+    <string name="const_temp_unit_text_f_sp">华氏度</string>
+    <string name="const_glu_unit_text">(mmol/L)</string>
+    <string name="const_nibp_text">等级</string>
+    <string name="const_submit">确定</string>
+    <string name="const_cancel">取消</string>
+    <string name="const_tip">提示</string>
+    <string name="const_data_nodata">--</string>
+    <string name="const_draw_unit">单位</string>
+    <string name="const_time">时间</string>
+    <string name="const_err">测量错误</string>
+    <string name="const_err_lo">测量结果过低</string>
+    <string name="const_err_hi">测量结果过高</string>
+    <string name="const_ua_mgdl_text">尿酸  (mg/dL)</string>
+	<string name="const_ua_mmol_text">尿酸  (mmol/L)</string>
+    <string name="const_chol_mgdl_text">总胆固醇 (mg/dL)</string>
+    <string name="const_chol_mmol_text">总胆固醇 (mmol/L)</string>
+	
+    <!-- 定义MainActivity中使用字符串 -->
+    <string name="main_notconnect">未连接设备</string>
+    <string name="main_swtich_device">请选择要连接的设备</string>
+    <string name="main_bt_connect">连接</string>
+    <string name="main_connectname">已连接设备:</string>
+    <string name="main_bt_disconnect">断开</string>
+    <string name="main_dev_infos">软件版本:</string>
+    <string name="main_dev_infoh">硬件版本:</string>
+    <string name="main_dev_infoa">算法版本:</string>
+    <string name="main_dev_disconnect">点击确定断开与设备的连接</string>
+    <string name="main_dev_battery">设备电量</string>
+    <string name="main_exitmsg">再按一次退出软件</string>
+    <string name="share_layouttitle">请选择应用分享</string>
+    <string name="share_noAPP">没有可分享的应用</string>
+    <string name="update_complete">升级完成，请重新启动设备</string>
+
+    <!-- 定义蓝牙连接使用字符 -->
+    <string name="connect_conectdevice">连接设备</string>
+    <string name="connect_connect">连接</string>
+    <string name="connect_success">与设备成功连接</string>
+    <string name="connect_connecting">正在与设备连接中，不能取消</string>
+    <string name="connect_startseach">正在搜索设备</string>
+    <string name="connect_startconnect">正在与设备建立连接</string>
+    <string name="connect_fail">与设备连接失败 点击重新开始连接</string>
+    <string name="connect_notfind">没有搜索到设备</string>
+    <string name="connect_deviceshutdown">设备已关机  连接断开</string>
+    <string name="connect_connect_off">与设备连接断开</string>
+    <string name="connect_devnotmate">选择的设备与已连接设备不匹配</string>
+    <string name="connect_opening">正在打开蓝牙</string>
+    <string name="connect_openfail">蓝牙打开失败</string>
+    <string name="connect_close">检测到蓝牙被关闭 操作失败</string>
+
+    <!-- 定义测量数据界面使用字符 -->
+    <string name="measure_spo2_title">血氧测量</string>
+    <string name="measure_spo2_progress">当前测量进度:</string>
+     <string name="measure_update">升级</string>
+    <string name="measure_nibp">血压测量</string>
+    <string name="measure_ecg">心电测量</string>
+    <string name="measure_start">开始测量</string>
+    <string name="measure_stop">停止测量</string>
+    <string name="measure_over">测量完成</string>
+    <string name="measure_no">未进行测量</string>
+    <string name="measure_ing">测量进行中</string>
+    <string name="measure_pb_rank_1">最佳</string>
+    <string name="measure_pb_rank_2">正常</string>
+    <string name="measure_pb_rank_3">临高</string>
+    <string name="measure_pb_rank_4">轻高</string>
+    <string name="measure_pb_rank_5">中高</string>
+    <string name="measure_pb_rank_6">重高</string>
+    <string name="measure_err_cancel">取消测量</string>
+    <string name="measure_sonde_off">探头脱落</string>
+    <string name="measure_lead_off">导联脱落</string>
+    <string name="measure_history">最近测量记录</string>
+    <string name="measure_over_saved">测量完成，数据已保存</string>
+    <string name="measure_80b_file_msg">检测到下位机发送文件，是否接收？</string>
+    <string name="measure_nibp_err">血压测量错误</string>
+    <string name="measure_nibp_over_msg_1">血压测量结束,测量结果为,</string>
+    <string name="measure_ecg_file_ing">正在接收文件</string>
+    <string name="measure_ecg_file_end">接收完成</string>
+    <string name="measure_ecg_time_out">接收超时</string>
+    <string name="measure_ecg_connect_dev">请链接心电设备</string>
+
+    <!-- 定义用户模块所使用的字符串 -->
+    <string name="user_title">个人中心</string>
+    <string name="user_register">注册用户</string>
+    <string name="user_deluser">删除用户</string>
+    <string name="user_nouser">未注册用户</string>
+    <string name="user_register_test">注册</string>
+    <string name="user_otermode">访客模式</string>
+    <string name="user_forgetpwd">忘记密码</string>
+    <string name="user_regname">账号:</string>
+    <string name="user_regpwd">密码:</string>
+    <string name="user_regemail">邮箱:</string>
+    <string name="user_regphone">手机:</string>
+    <string name="user_regsex">性别:</string>
+    <string name="user_regage">出生日期:</string>
+    <string name="user_regheight">身高:</string>
+    <string name="user_regweight">体重:</string>
+    <string name="user_regallergy">病史:</string>
+    <string name="user_regnamehint">4&#8211;20个字符</string>
+    <string name="user_regpwdhint">4&#8211;20个字符 字母或数字</string>
+    <string name="user_regemailhint">可用于找回密码</string>
+    <string name="user_regheightunit">20(cm)&#8211;300(cm)之间</string>
+    <string name="user_regweightunit">10(kg)&#8211;500(kg)之间</string>
+    <string name="user_regallergyunit">病史或过敏物(400字以内)</string>
+    <string name="user_regphonehint">请输入手机号码</string>
+    <string name="user_regsex_man">男</string>
+    <string name="user_regsex_woman">女</string>
+    <string name="user_regageunit">点击输入出生日期</string>
+    <string name="user_reg_err_success">注册成功</string>
+    <string name="user_reg_err_fail">注册失败</string>
+    <string name="user_reg_err_nameerr">用户名错误</string>
+    <string name="user_reg_err_namerep">该用户名已存在</string>
+    <string name="user_reg_err_pwd">密码输入错误</string>
+    <string name="user_reg_err_email">请输入有效的邮箱地址</string>
+    <string name="user_reg_err_phone">请输入有效的手机号码</string>
+    <string name="user_login">用户登录</string>
+    <string name="user_loginerr">登录失败 用户名或密码错误</string>
+    <string name="user_userlog">登录</string>
+    <string name="user_userloging">登录中</string>
+    <string name="user_login_name">账号</string>
+    <string name="user_login_pwd">密码</string>
+    <string name="user_loginsuccess">登录成功</string>
+    <string name="user_login_notconnet">联网失败 当前以离线模式登录</string>
+    <string name="user_login_othermode">当前以访客模式登录 部分功能不能使用</string>
+    <string name="user_login_deluser">删除后不能自动登录软件 确定删除该吗？</string>
+    <string name="user_reg_err_img_nosdcard">没有找到存储卡，不能存放照片</string>
+    <string name="user_reg_ing">注册中，请稍等。。。。。。</string>
+    <string name="user_reg_head_1">选择本地照片</string>
+    <string name="user_reg_head_2">拍照</string>
+    <string name="user_reg_head_title">设置头像</string>
+    <string name="user_reg_change_s">信息修改成功</string>
+    <string name="user_reg_change_e">服务器错误，修改失败</string>
+    <string name="user_change_switchdata_title">选择日期</string>
+    <string name="user_change_err_name">账号错误</string>
+    <string name="user_change_err_pwd">密码错误</string>
+    <string name="user_change_err_phone">请填写正确的手机号码</string>
+    <string name="user_change_err_brithday">请填写正确的出生日期</string>
+    <string name="user_change_err_email">请填写正确的邮箱</string>
+    <string name="user_change_err_height">请填写正确的身高</string>
+    <string name="user_change_err_weight">请填写正确的体重</string>
+    <string name="user_change_err_allergy">请填写正确的病史</string>
+    <string name="user_change_allergycnt">还能输入</string>
+
+    <!-- 用户中心 -->
+    <string name="usercentre_title">用户中心</string>
+    <string name="usercentre_oper_change">修改信息</string>
+    <string name="usercentre_oper_data">数据统计</string>
+    <string name="usercentre_oper_back">备份中心</string>
+    <string name="usercentre_oper_change1"></string>
+    <string name="usercentre_oper_exit">退出登录</string>
+    <string name="usercentre_registertime">注册时间:</string>
+
+    <!-- network -->
+    <string name="network_network_off"> o(╯□╰)o 网络错误，请检查网络</string>
+    <string name="network_network_notconnect"> o(╯□╰)o 不能连接服务器</string>
+
+    <!-- data manage -->
+    <string name="data_title">数据管理</string>
+    <string name="data_dataplayback">数据回放</string>
+    <string name="data_updata_listtime">上次备份时间</string>
+    <string name="data_updata_nodata">没有找到备份数据</string>
+    <string name="data_updata">备份数据</string>
+    <string name="data_updata_explain">备份数据到云端</string>
+    <string name="data_down">恢复数据</string>
+    <string name="data_down_explain">从云端恢复数据到手机</string>
+    <string name="data_import">导入数据</string>
+    <string name="data_export">分享数据</string>
+    <string name="data_managerservice">管理备份数据</string>
+    <string name="data_deldata">删除数据</string>
+    <string name="data_updata_success">上传成功</string>
+    <string name="data_updata_fial">上传失败</string>
+    <string name="data_nouser">未登录</string>
+    <string name="data_usernodata">当前项没有数据</string>
+    <string name="data_selectdatatype">请选择数据类型</string>
+    <string name="data_selectdate">请选择日期</string>
+    <string name="data_selectdata">请选择数据</string>
+    <string name="data_delete_msg">确认删除</string>
+    <string name="data_noexist">数据文件不存在</string>
+    <string name="data_delete_text">删除</string>
+    <string name="data_noswitchdata">没有选择数据</string>
+    <string name="data_dialog_msg">是否删除所选数据 </string>
+    <string name="data_del_success">删除成功</string>
+    <string name="data_del_faile">删除失败   文件不存在</string>
+    <string name="data_menu_seach">选择数据</string>
+    <string name="data_menu_del">删除数据</string>
+    <string name="data_del_nochoice">没有选择数据</string>
+
+    <!-- data playback -->
+    <string name="playback_item_spo2">血氧脉率</string>
+    <string name="playback_item_ecg">心电数据管理</string>
+    <string name="playback_item_nibp">血压数据管理</string>
+    <string name="playback_item_temp">体温数据管理</string>
+    <string name="playback_item_glu">血糖数据管理</string>
+    <string name="playback_nodata">没有数据</string>
+    <string name="playback_datainfo_title">记录详情</string>
+    <string name="playback_datainfo_rank">结果等级</string>
+    <string name="playback_datainfo_time">测量时间</string>
+    <string name="playback_datainfo_from">数据来自</string>
+    <string name="playback_pb_list_title_rank">等级</string>
+    <string name="playback_pb_list_title_rank_c">选择</string>
+    <string name="playback_list_menu_all">全选</string>
+    <string name="playback_list_menu_counter">反选</string>
+    <string name="playback_list_menu_cancel">取消</string>
+    <string name="playback_pluse_fileerr">数据文件以损坏或不存在</string>
+    <string name="playback_del_msg">确定删除所选数据?</string>
+    <string name="playback_oper_start">数据处理中</string>
+    <string name="playback_oper_end">操作完成</string>
+    <string name="playback_oper_err">操作失败</string>
+    <string name="playback_ecg_pause">暂停</string>
+    <string name="playback_pop_del">删除</string>
+    <string name="playback_pop_imp">导入</string>
+    <string name="playback_pop_exp">导出</string>
+    <string name="playback_pop_up">上传</string>
+    <string name="playback_page_page_1">第</string>
+    <string name="playback_page_page_2">页</string>
+
+    <!-- updata -->
+    <string name="updata_title">上传数据</string>
+    <string name="updata_opering">正在处理中，请稍等！</string>
+    <string name="updata_opersuccess">处理成功</string>
+    <string name="updata_opererror">处理失败</string>
+    <string name="updata_getdataerror">获取数据失败</string>
+    <string name="updata_connectserverfail">连接服务器失败</string>
+    <string name="updata_dialog_title">提示</string>
+    <string name="data_spoc">血氧连续数据</string>
+    <string name="data_spos">血氧点测数据</string>
+    <string name="data_ecg">心电数据</string>
+    <string name="data_nibp">血压数据</string>
+    <string name="data_tmp">体温数据</string>
+    <string name="data_glu">血糖数据</string>
+
+    <!-- import -->
+    <string name="import_success">操作成功</string>
+    <string name="import_fail">操作失败</string>
+    <string name="import_usererr">选择的数据与登录用户不匹配，请重新选择！</string>
+
+    <!-- setting -->
+    <string name="setting_title">设置</string>
+    <string name="setting_basic">基本设置</string>
+    <string name="setting_basic_icon">创建桌面图标</string>
+    <string name="setting_basic_icon_su">创建成功</string>
+    <string name="setting_basic_icon_ex">快捷方式已存在</string>
+    <string name="setting_basic_spomode">连续存储血氧数据</string>
+    <string name="setting_basic_spomode_t">开启后在测量血氧时将连续存储血氧数据</string>
+    <string name="setting_speech">语音设置</string>
+    <string name="setting_speech_off_on">开启语音服务</string>
+    <string name="setting_speech_off_on_t">开启后在软件中可使用语音播报功能</string>
+    <string name="setting_speech_msg">该功能需要在您的手机上安装科大讯飞语音+软件才能使用，是否安装？</string>
+    <string name="setting_speech_installerr">安装失败</string>
+    <string name="setting_update">软件更新</string>
+    <string name="setting_update_check">检查更新</string>
+    <string name="setting_update_wifi">WIFI下自动更新</string>
+    <string name="setting_tools">实用工具</string>
+    <string name="setting_tools_clock">用药提醒</string>
+    <string name="setting_help">帮助</string>
+    <string name="setting_help_about">关于我们</string>
+    <string name="setting_help_introduce">产品介绍</string>
+    <string name="setting_help_tips">健康知识</string>
+    <string name="setting_help_help">使用帮助</string>
+    <string name="setting_help_web">官网:</string>
+    <string name="setting_opinion_opinion">意见反馈</string>
+    <string name="setting_opinion_phone">联系方式(手机、邮箱等联系方式)</string>
+    <string name="setting_opinion_content">请填写对软件或者产品的意见或者建议</string>
+    <string name="setting_opinion_err">请填写正确的信息</string>
+    <string name="setting_opinion_s">提交成功</string>
+
+    <!-- main menu -->
+    <string name="main_menu_home">首页</string>
+    <string name="main_menu_nouser">点击登录</string>
+    <string name="main_menu_dev_info">设备信息</string>
+    <string name="main_menu_nodevice">未连接设备</string>
+    <string name="main_menu_manage">数据管理</string>
+    <string name="main_menu_manage_spo">血氧点测数据</string>
+    <string name="main_menu_manage_spoc">血氧连续数据</string>
+    <string name="main_menu_manage_nibp">血压数据管理</string>
+    <string name="main_menu_manage_ecg">心电数据管理</string>
+    <string name="main_menu_manage_temp">体温数据管理</string>
+    <string name="main_menu_manage_glu">血糖数据管理</string>
+    <string name="main_menu_more">更多</string>
+    <string name="main_menu_more_update">检查更新</string>
+    <string name="main_menu_more_introduce">产品介绍</string>
+    <string name="main_menu_more_setting">设置</string>
+
+    <!-- update -->
+    <string name="update_text">软件更新</string>
+    <string name="update_checksoft">手动检查软件更新</string>
+    <string name="update_autocheck">自动更新</string>
+    <string name="update_onlywifi">仅在WIFI下更新</string>
+    <string name="update_title">更新</string>
+    <string name="update_firmware_title">PC200更新固件</string>
+    <string name="update_checking">正在检测中…………</string>
+    <string name="update_connectservererr">获取信息失败</string>
+    <string name="update_new">当前以是最新版本</string>
+    <string name="update_hasnew">检测到有新版本</string>
+    <string name="update_hasnewanddown">检查到有新版本，点击确定下载更新！</string>
+    <string name="update_down_dia_tile">下载</string>
+    <string name="update_down_ing">正在下载    请稍等</string>
+    <string name="update_down_over">下载完成</string>
+    <string name="update_down_err">下载失败</string>
+    <string name="update_down_fileexits">文件已存在</string>
+    
+    <string name="android6_request_location">android6.0以上版本，搜索蓝牙时需要开启位置信息，否则搜不到设备！</string>
+
+</resources>

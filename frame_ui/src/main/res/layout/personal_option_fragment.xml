@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/title_linear"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/option_back_linear"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="{fa-chevron-left}"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="#798DAA"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/option_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:textColor="#37BBFB"
+            android:textSize="18sp"
+            android:text="提交"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="#E9F0F5">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:textColor="#E9F0F5"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="2dp"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="23dp"
+                    android:layout_height="15dp"
+                    android:background="@mipmap/option_edit"
+                    />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/option_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:gravity="top|left"
+                    android:hint="我们会认真倾听您的宝贵建议"
+                    android:textColorHint="#D1DDE6"
+                    android:textSize="15sp" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E9F0F5"
+                 />
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#798DAA"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="问题截图（选填）"
+                    />
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/option_recycleview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E9F0F5"
+                />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#798DAA"
+                    android:textSize="16sp"
+                    android:text="联系方式（选填）"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/option_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="#D1DDE6"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="如邮箱手机号等（选填）"
+                    android:textColorHint="#D1DDE6"
+                    />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>
